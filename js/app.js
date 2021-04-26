@@ -5,13 +5,26 @@ alert('Welcome '+userName);
 
 let q1=prompt('Am I a person with passion ?').toLowerCase();
 
-if(q1 == 'y' || q1 =='yes'){
-    alert('Good job !');
-    console.log('Correct answer '+ q1);
-}
-else{
-    alert('Wrong guess !');
-    console.log('InCorrect answer '+ q1);
+// if(q1 == 'y' || q1 =='yes'){
+//     alert('Good job !');
+//     console.log('Correct answer '+ q1);
+// }
+// else{
+//     alert('Wrong guess !');
+//     console.log('InCorrect answer '+ q1);
+// }
+
+switch(q1){
+    case 'yes':
+    case 'y':
+        alert('Good job !');
+        break;
+    case 'no':
+    case 'n':
+        alert('Wrong guess !');
+        break; 
+    default:
+    alert('Hi from default!');
 }
 
 
